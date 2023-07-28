@@ -1,0 +1,23 @@
+#Barra {
+    background-color: white !important;
+}
+
+#Barra li {
+    padding: 0px 20px;
+
+}
+
+#Barra a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#Barra a:hover {
+    color:blueviolet
+}
+
+.LogoPng{
+    width: 60px;
+}
