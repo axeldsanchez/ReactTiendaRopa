@@ -1,10 +1,8 @@
 import "../Components/Greeting.css"
 
-export function Greeting () { 
-    return (
-        <div class="greeting">
-           BIENVENIDOS A LA TIENDA DE ROPA
+export const Greeting = ({saludo}) => { 
+    return <div class="greeting">
+           {saludo}
         </div>
                
-    );
 };

@@ -11,7 +11,7 @@ function App() {
   return (
     <>
   <Nav/>
-  <Greeting/>
+  <Greeting saludo ="BIENVENIDOS A LA TIENDA"/>
     </>
   )
 }
