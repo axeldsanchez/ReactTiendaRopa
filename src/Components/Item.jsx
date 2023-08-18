@@ -2,7 +2,7 @@
   const { name, description, price} = producto;
     return(
         
-        <div class="card" style="width: 18rem;">
+      <div className="card" style={{ width: '18rem' }}>
    {/*      <img src="..." class="card-img-top" alt="..."> */}
         <div class="card-body">
           <h5 class="card-title">{name}</h5>
