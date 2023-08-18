@@ -19,7 +19,7 @@ export function ItemListContainer () {
     return (
         <main>
 
-            <ItemList ItemList={products}/>
+            <ItemList itemList={products}/>
 
         </main>
     )

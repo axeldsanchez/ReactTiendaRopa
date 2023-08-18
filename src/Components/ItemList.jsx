@@ -1,12 +1,19 @@
 import {Item} from "./Item"
 
-export const ItemList = ({ products }) => {
+export function ItemList ({ itemList = [] }) {
     return (
-    <div>
-        {products.map(item => (
-            <Item key={item.id} id={item.id} description={item.description} price={item.price} name={item.name} />
-        ))}
-    </div>
 
+      <section>
+        {itemList.map((pro) => {
+          return (
+            <Item
+              name={pro.name}
+              description={pro.description}
+              price={pro.price}
+            />
+          );
+        })}
+
+      </section>
     );
-}; 
+  }

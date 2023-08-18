@@ -12,7 +12,7 @@ function App() {
   return (
     <>
   <Nav/>
-  <Greeting saludo ="BIENVENIDOS A LA TIENDA"/>
+{/*   <Greeting saludo ="BIENVENIDOS A LA TIENDA"/> */}
   <ItemListContainer/>
     </>
   )
