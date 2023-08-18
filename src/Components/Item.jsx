@@ -1,4 +1,5 @@
- export const Item = ({name, description, price}) => {
+ export const Item = ({ producto }) => {
+  const { name, description, price} = producto;
     return(
         
         <div class="card" style="width: 18rem;">

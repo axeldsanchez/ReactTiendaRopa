@@ -1,19 +1,13 @@
 import {Item} from "./Item"
 
-export function ItemList ({ itemList = [] }) {
+export function ItemList ({ productosFetch }) {
     return (
-
-      <section>
-        {itemList.map((pro) => {
-          return (
-            <Item
-              name={pro.name}
-              description={pro.description}
-              price={pro.price}
-            />
-          );
-        })}
-
-      </section>
-    );
-  }
+        <div className="container">
+          <div className="d-flex justify-content-aroud flex-wrap">
+            {productosFetch.map((producto) => (
+              <Item key={producto.id} producto={producto} />
+            ))}
+          </div>
+        </div>
+      );
+}
