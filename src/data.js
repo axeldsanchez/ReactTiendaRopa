@@ -121,3 +121,17 @@ export const getData = () => {
         }, 2000)
     })
 };
+
+export const getItem = (itemId) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() =>{
+            const newItem = data.filter((item) => item.id === itemId);
+            if (newItem) {
+                resolve(newItem)
+                }
+                else {
+                    reject("No se encontró item");
+                }
+        }, 2000)
+    })
+};
