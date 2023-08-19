@@ -1,4 +1,4 @@
-function ItemDetail({ name, description, price }) {
+export function ItemDetail({ name, description, price }) {
     return (
         <div className="card" style={{ width: '18rem' }}>
              <div class="card-body">
@@ -17,4 +17,3 @@ function ItemDetail({ name, description, price }) {
     );
   }
   
-  export default ItemDetail;

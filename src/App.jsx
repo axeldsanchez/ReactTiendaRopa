@@ -14,7 +14,7 @@ function App() {
   <Nav/>
 {/*   <Greeting saludo ="BIENVENIDOS A LA TIENDA"/> */}
   <ItemListContainer/>
-  <ItemDetailContainer/>
+ {/*  <ItemDetailContainer/> */}
 
     </>
   )

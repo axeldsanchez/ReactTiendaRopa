@@ -1,5 +1,6 @@
- export const Item = ({ producto }) => {
-  const { name, description, price} = producto;
+
+
+export const Item = ({ name, description, price}) => {
     return(
         
       <div className="card" style={{ width: '18rem' }}>
@@ -10,7 +11,7 @@
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">{price}</li>
-          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">Detalle</li>
         </ul>
         <div class="card-body">
           <a href="#" class="card-link">Card link</a>
