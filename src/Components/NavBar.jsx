@@ -17,16 +17,24 @@ export function Nav() {
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
+                            <Link to={"/category/Remeras"} >
                                 <a class="nav-link active" aria-current="page" href="#">Remeras</a>
+                                </Link>
                             </li>
                             <li class="nav-item">
+                            <Link to={"/category/Pantalones"} >
                                 <a class="nav-link" href="#">Pantalones</a>
+                                </Link>
                             </li>
                             <li class="nav-item">
+                            <Link to={"/category/Camisas"} >
                                 <a class="nav-link" href="#">Camisas</a>
+                                 </Link>
                             </li>
                             <li class="nav-item">
+                            <Link to={"/category/Sweaters"} >
                                 <a class="nav-link" href="#">Sweaters</a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
