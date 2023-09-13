@@ -8,7 +8,8 @@ import { ItemListContainer } from './Components/ItemListContainer.jsx'
 import {ItemDetailContainer} from "./Components/ItemDetailContainer.jsx"
 import {Cart} from "./Components/Cart.jsx"
 import { CartProvider } from './context/CartContext.jsx'
-
+import {Checkout} from "./Components/Checkout.jsx";
+ 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <CartProvider>
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Route path="/category/:id" element={<> <Nav /> <ItemListContainer/> </>} />
     <Route path="/item/:id" element={<> <Nav /> <ItemDetailContainer/> </>} />
     <Route path="/cart" element={<> <Nav /> <Cart /> </>} />
+    <Route path="/checkout" element={<> <Nav /> <Checkout/> </>} />
     </Routes>
     </BrowserRouter>
     </CartProvider>
