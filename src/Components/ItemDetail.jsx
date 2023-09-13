@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ItemCount } from "./ItemCount";
 import { CartContext } from "../context/CartContext";
 
-export const ItemDetail = ({id, name, description, price, stock }) => {
+export const ItemDetail = ({id, name, description, price, stock, imagen }) => {
   const [quantityAdded, setQuantityAdded] = useState(0)
 
   const { addItem } = useContext(CartContext)
@@ -20,9 +20,11 @@ export const ItemDetail = ({id, name, description, price, stock }) => {
   }
 
   return (
+    <div>
     <div className="card" style={{ width: '18rem' }}>
       <div class="card-body">
         <h5 class="card-title">{name}</h5>
+        <img src={imagen} style={{ height: '17rem', width: '16rem' }} />
         <p class="card-text">{description}</p>
       </div>
       <ul class="list-group list-group-flush">
@@ -31,6 +33,7 @@ export const ItemDetail = ({id, name, description, price, stock }) => {
       <div class="card-body">
         {quantityAdded > 0 ? (<Link to="/cart"><button>Terminar Compra</button></Link>) : <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />}
       </div>
+    </div>
     </div>
   );
 }
